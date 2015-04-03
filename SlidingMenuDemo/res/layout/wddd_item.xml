@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+		<TextView
+	        android:id="@+id/ycid"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:visibility="gone"/>
+	    <ImageView
+	        android:id="@+id/image"
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:layout_marginLeft="10dp"
+	        android:scaleType="fitXY"
+	        android:contentDescription="@string/empty"
+	        android:src="@drawable/ic_launcher" />
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:orientation="vertical">
+	   <TextView
+	        android:id="@+id/ycname"
+	        android:layout_width="120dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentTop="true"
+	        android:textStyle="bold"
+	        android:text="白云宾馆夜总会" />
+	
+		 <TextView
+	        android:id="@+id/mony"
+	        android:layout_width="40dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="40dp"
+	        android:textStyle="bold"
+	        android:text="v100"
+	        android:textColor="@color/red" />
+	
+		 <TextView
+	        android:id="@+id/date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/ycname"
+	        android:text="2015-10-01 10:51:10" />
+		<TextView
+	        android:id="@+id/space"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/show"
+	        android:layout_below="@+id/mony"
+	        android:layout_marginRight="28dp"
+	        android:text="取消" />
+		
+	        <ImageView
+	        android:id="@+id/show"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/mony"
+	        android:contentDescription="@string/empty"
+	        android:src="@drawable/btn_down" />
+		</RelativeLayout>
+	</LinearLayout>
+	<RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+        <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentLeft="true"
+        android:text="白云1" />
+	
+        <ImageView
+        android:id="@+id/phoneImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/username"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/btn_phone" />
+        <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/phoneImage"
+        android:text="1333333333" />
+    </RelativeLayout>
+</LinearLayout>

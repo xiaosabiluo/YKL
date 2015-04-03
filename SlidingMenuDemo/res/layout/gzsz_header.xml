@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hometabs"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+     <TextView
+        android:id="@+id/sbtext"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="20dp"
+         android:layout_centerVertical="true"
+        android:text="约会" />
+ 	<com.ycr.util.SlideButton  
+        android:id="@+id/slidebutton"  
+        android:layout_width="80dp"  
+        android:layout_height="28dp"  
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/sbtext" />
+ 	<CheckBox
+ 	    android:id="@+id/radioinfo"
+ 	    android:layout_width="30dp"
+ 	    android:layout_height="30dp"
+ 	    android:button="@null"
+ 	    android:layout_toLeftOf="@+id/textbcsz"
+ 	    android:layout_centerVertical="true"
+ 	    android:contentDescription="@string/empty"
+ 	    android:background="@drawable/radio_button_select" />
+ 	<TextView
+ 	    android:id="@+id/textbcsz"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:button="@null"
+        android:text="保持设置" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp" 
+        android:background="@color/gray"/>
+    <RelativeLayout
+        android:id="@+id/grsminfo"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical">
+     <TextView
+        android:id="@+id/fbtext"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:text="方便" />
+ 	<TextView
+ 	    android:id="@+id/dz"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fbtext"
+        android:layout_centerVertical="true"
+        android:text="" />
+ 	<ImageView
+ 	    android:layout_width="40dp"
+ 	    android:layout_height="30dp"
+ 	    android:layout_alignParentRight="true"
+ 	    android:layout_centerVertical="true"
+ 	    android:contentDescription="@string/empty"
+ 	    android:src="@drawable/btn_info" />
+ 	</RelativeLayout>
+ 	<View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp" 
+        android:background="@color/gray"/>
+ 	<View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp" 
+        android:background="@color/gray"/>
+
+ 	<LinearLayout
+ 	    android:visibility="gone"
+ 	    android:id="@+id/tjyctitle"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="27dp"
+ 	    android:layout_gravity="center_vertical"
+ 	    android:background="@color/gray" >
+
+ 	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_vertical"
+        android:text="推荐会所" />
+    </LinearLayout>
+    <LinearLayout
+ 	    android:visibility="gone"
+ 	    android:id="@+id/wdyctitle"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="27dp"
+ 	    android:layout_gravity="center_vertical"
+ 	    android:background="@color/gray" >
+
+ 	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_vertical"
+        android:text="我的夜场" />
+    </LinearLayout>
+</LinearLayout>
